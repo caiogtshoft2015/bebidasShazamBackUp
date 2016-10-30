@@ -1,6 +1,7 @@
 package br.com.bebidasShazam.entites;
 
 public class Produto {
+	private int id_produto;
 	private String nome;
 	private Integer fornecedor;
 	private Integer categoria;
@@ -11,14 +12,20 @@ public class Produto {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Produto(String nome, Integer fornecedor, Integer categoria, double valorVenda, double valorCusto) {
+	
+
+	public Produto(int id_produto, String nome, Integer fornecedor, Integer categoria, double valorVenda,
+			double valorCusto) {
 		super();
+		this.id_produto = id_produto;
 		this.nome = nome;
 		this.fornecedor = fornecedor;
 		this.categoria = categoria;
 		this.valorVenda = valorVenda;
 		this.valorCusto = valorCusto;
 	}
+
+
 
 	public String getNome() {
 		return nome;
@@ -58,6 +65,14 @@ public class Produto {
 
 	public void setValorCusto(double valorCusto) {
 		this.valorCusto = valorCusto;
+	}
+
+	public int getId_produto() {
+		return id_produto;
+	}
+
+	public void setId_produto(int id_produto) {
+		this.id_produto = id_produto;
 	}
 
 }

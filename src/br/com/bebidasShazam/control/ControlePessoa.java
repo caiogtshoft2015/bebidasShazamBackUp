@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.bebidasShazam.entites.ClientePF;
 import br.com.bebidasShazam.entites.Endereco;
+import br.com.bebidasShazam.persistence.ClientePFDAO;
 import br.com.bebidasShazam.persistence.EnderecoDAO;
 
 @WebServlet("/ControlePessoa")
@@ -27,6 +28,7 @@ public class ControlePessoa extends HttpServlet {
     	if(acao.equalsIgnoreCase("cadastrarPF")){
     		
     		try {
+    			
 				
     			Endereco endereco = new Endereco();
         		
@@ -47,7 +49,9 @@ public class ControlePessoa extends HttpServlet {
         		clientePf.setCpf(Integer.parseInt(request.getParameter("cpf")));
         		clientePf.setEndereco(idEndereco);
         		
+        		ClientePFDAO clienteDAO = new ClientePFDAO();
         		
+        		clienteDAO.insertClientePf(clientePf);
         		
     			
 			} catch (Exception e) {

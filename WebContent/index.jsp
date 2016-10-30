@@ -6,12 +6,12 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-<title>Insert title here</title>
+<title>Cadastro</title>
 
 </head>
 <body>
 
-	<form name="endereco" method="post"
+	<form name="cadastro" method="post"
 		action="ControlePessoa?acao=cadastrarPF">
 
 		<h4>Dados Gerais:</h4>
