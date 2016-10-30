@@ -2,29 +2,22 @@ package br.com.bebidasShazam.entites;
 
 public class Funcionario extends PessoaFisica{
 	private Integer id_funcionario;
-	private Integer cargo;
-	private Endereco endereco;
+	private String cargo;
 	
 	public Funcionario() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Funcionario(Integer cargo, Endereco endereco, Integer cpf, String nome, String telefone) {
+	public Funcionario(String cargo, Integer cpf, String nome, String telefone) {
 		super(cpf, nome, telefone);
 		this.cargo = cargo;
-		this.endereco = endereco;
 	}
 
-	public Endereco getEndereco() {
-		return endereco;
-	}
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
-	public Integer getCargo() {
+	
+	public String getCargo() {
 		return cargo;
 	}
-	public void setCargo(Integer cargo) {
+	public void setCargo(String cargo) {
 		this.cargo = cargo;
 	}
 	public Integer getId_funcionario() {
