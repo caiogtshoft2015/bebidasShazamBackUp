@@ -18,6 +18,10 @@ public class Main {
 //			e1.printStackTrace();
 //		}
 		
+		String valor = "25";
+		Integer teste = Integer.valueOf(valor);
+		System.out.println(teste+3);
+		
 	}
 
 }

@@ -15,8 +15,8 @@ public class ProdutoDAO extends DAO {
 		stmt = con.prepareStatement(query);
 
 		stmt.setString(1, produto.getNome());
-		stmt.setString(2, produto.getFornecedor());
-		stmt.setString(3, produto.getCategoria());
+		stmt.setLong(2, produto.getFornecedor());
+		stmt.setLong(3, produto.getCategoria());
 		stmt.setDouble(4, produto.getValorVenda());
 		stmt.setDouble(5, produto.getValorCusto());
 
@@ -45,8 +45,8 @@ public class ProdutoDAO extends DAO {
 		while (rs.next()) {
 			produto.setId_produto(rs.getInt("id_produto"));
 			produto.setNome(rs.getString("nome"));
-			produto.setCategoria(rs.getString("categoria"));
-			produto.setFornecedor(rs.getString("fornecedor"));
+			produto.setCategoria(rs.getInt("categoria"));
+			produto.setFornecedor(rs.getInt("fornecedor"));
 			produto.setValorCusto(rs.getDouble("valor_custo"));
 			produto.setValorVenda(rs.getDouble("valor_venda"));
 		}
@@ -75,8 +75,8 @@ public class ProdutoDAO extends DAO {
 			while (rs.next()) {
 				produto.setId_produto(rs.getInt("id_produto"));
 				produto.setNome(rs.getString("nome"));
-				produto.setCategoria(rs.getString("categoria"));
-				produto.setFornecedor(rs.getString("fornecedor"));
+				produto.setCategoria(rs.getInt("categoria"));
+				produto.setFornecedor(rs.getInt("fornecedor"));
 				produto.setValorCusto(rs.getDouble("valor_custo"));
 				produto.setValorVenda(rs.getDouble("valor_venda"));
 				lista.add(produto);

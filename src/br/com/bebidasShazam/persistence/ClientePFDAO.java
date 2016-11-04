@@ -83,7 +83,7 @@ public class ClientePFDAO extends DAO {
 
 		ClientePF cliente = new ClientePF();
 
-		ArrayList<ClientePF> lista = new ArrayList();
+		ArrayList<ClientePF> lista = new ArrayList<ClientePF>();
 
 		while (rs.next()) {
 

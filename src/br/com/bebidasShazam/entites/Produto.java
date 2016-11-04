@@ -3,8 +3,8 @@ package br.com.bebidasShazam.entites;
 public class Produto {
 	private int id_produto;
 	private String nome;
-	private String fornecedor;
-	private String categoria;
+	private Integer fornecedor;
+	private Integer categoria;
 	private double valorVenda;
 	private double valorCusto;
 
@@ -14,7 +14,7 @@ public class Produto {
 
 	
 
-	public Produto(int id_produto, String nome, String fornecedor, String categoria, double valorVenda,
+	public Produto(int id_produto, String nome, Integer fornecedor, Integer categoria, double valorVenda,
 			double valorCusto) {
 		super();
 		this.id_produto = id_produto;
@@ -35,20 +35,20 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	public String getCategoria() {
+	public Integer getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	public void setCategoria(Integer string) {
+		this.categoria = string;
 	}
 
-	public String getFornecedor() {
+	public Integer getFornecedor() {
 		return fornecedor;
 	}
 
-	public void setFornecedor(String fornecedor) {
-		this.fornecedor = fornecedor;
+	public void setFornecedor(Integer string) {
+		this.fornecedor = string;
 	}
 
 	public double getValorVenda() {

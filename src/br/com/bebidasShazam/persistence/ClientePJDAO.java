@@ -84,7 +84,7 @@ public class ClientePJDAO extends DAO{
 
 		ClientePJ cliente = new ClientePJ();
 
-		ArrayList<ClientePJ> lista = new ArrayList();
+		ArrayList<ClientePJ> lista = new ArrayList<ClientePJ>();
 
 		while (rs.next()) {
 
